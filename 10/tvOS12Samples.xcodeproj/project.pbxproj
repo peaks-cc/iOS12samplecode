@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F3108D062133A43700E9B6B2 /* TVDigitEntrySampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3108D052133A43700E9B6B2 /* TVDigitEntrySampleViewController.swift */; };
+		F3108D082133A44900E9B6B2 /* TVDigitEntryViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3108D072133A44900E9B6B2 /* TVDigitEntryViewController.storyboard */; };
+		F3108D0A2133A5EC00E9B6B2 /* TVLockupView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3108D092133A5EC00E9B6B2 /* TVLockupView.storyboard */; };
+		F3108D0C2133A60D00E9B6B2 /* TVLockupViewSampleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3108D0B2133A60D00E9B6B2 /* TVLockupViewSampleController.swift */; };
+		F35879742135722B008C4697 /* FaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35879732135722B008C4697 /* FaceView.swift */; };
+		F358797621357239008C4697 /* FaceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F358797521357239008C4697 /* FaceView.xib */; };
+		F358797821357373008C4697 /* UIView+Inspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F358797721357373008C4697 /* UIView+Inspectable.swift */; };
+		F398D3402131402D00F4E075 /* TVPosterView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F398D33F2131402D00F4E075 /* TVPosterView.storyboard */; };
+		F398D342213143B700F4E075 /* TVPosterViewSampleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F398D341213143B700F4E075 /* TVPosterViewSampleController.swift */; };
+		F398D348213145B700F4E075 /* UIView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F398D347213145B700F4E075 /* UIView+Utils.swift */; };
+		F398D34D21325B9D00F4E075 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = F398D34A21325B9D00F4E075 /* Book.swift */; };
+		F398D34E21325B9D00F4E075 /* SampleBooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = F398D34C21325B9D00F4E075 /* SampleBooks.swift */; };
+		F3C03F5E212E9E62002F69C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C03F58212E9E62002F69C2 /* AppDelegate.swift */; };
+		F3C03F5F212E9E62002F69C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3C03F5B212E9E62002F69C2 /* Main.storyboard */; };
+		F3C03F60212E9E62002F69C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3C03F5C212E9E62002F69C2 /* Assets.xcassets */; };
+		F3C03F62212E9EEE002F69C2 /* TVUIKit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3C03F61212E9EEE002F69C2 /* TVUIKit.storyboard */; };
+		F3E9C2B12132AEB500AD96F3 /* BookCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3E9C2B02132AEB500AD96F3 /* BookCardView.xib */; };
+		F3E9C2B42132AFE700AD96F3 /* BookCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E9C2B32132AFE700AD96F3 /* BookCardView.swift */; };
+		F3E9C2B62132B0F500AD96F3 /* TVCardView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3E9C2B52132B0F500AD96F3 /* TVCardView.storyboard */; };
+		F3E9C2B82132B13400AD96F3 /* TVCardViewSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E9C2B72132B13400AD96F3 /* TVCardViewSampleViewController.swift */; };
+		F3E9C2BC2132B67600AD96F3 /* UINib+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E9C2BB2132B67600AD96F3 /* UINib+Util.swift */; };
+		F3E9C2BE2132F83C00AD96F3 /* TVMonogramViewSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E9C2BD2132F83C00AD96F3 /* TVMonogramViewSampleViewController.swift */; };
+		F3E9C2C02132F85100AD96F3 /* TVMonogramView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3E9C2BF2132F85100AD96F3 /* TVMonogramView.storyboard */; };
+		F3E9C2C22132FA5500AD96F3 /* SampleAuthors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E9C2C12132FA5500AD96F3 /* SampleAuthors.swift */; };
+		F3E9C2C42132FA5C00AD96F3 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E9C2C32132FA5C00AD96F3 /* Author.swift */; };
+		F3F80B69213290190086BBFB /* ButtonObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F80B68213290190086BBFB /* ButtonObject.swift */; };
+		F3F80B6B213290D20086BBFB /* SampleButtonObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F80B6A213290D20086BBFB /* SampleButtonObjects.swift */; };
+		F3F80B6D2132911E0086BBFB /* TVCaptionButtonView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3F80B6C2132911E0086BBFB /* TVCaptionButtonView.storyboard */; };
+		F3F80B6F213292630086BBFB /* TVCaptionButtonViewSampleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F80B6E213292620086BBFB /* TVCaptionButtonViewSampleController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F3108D052133A43700E9B6B2 /* TVDigitEntrySampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TVDigitEntrySampleViewController.swift; sourceTree = "<group>"; };
+		F3108D072133A44900E9B6B2 /* TVDigitEntryViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TVDigitEntryViewController.storyboard; sourceTree = "<group>"; };
+		F3108D092133A5EC00E9B6B2 /* TVLockupView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TVLockupView.storyboard; sourceTree = "<group>"; };
+		F3108D0B2133A60D00E9B6B2 /* TVLockupViewSampleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TVLockupViewSampleController.swift; sourceTree = "<group>"; };
+		F35879732135722B008C4697 /* FaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceView.swift; sourceTree = "<group>"; };
+		F358797521357239008C4697 /* FaceView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FaceView.xib; sourceTree = "<group>"; };
+		F358797721357373008C4697 /* UIView+Inspectable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Inspectable.swift"; sourceTree = "<group>"; };
+		F398D33F2131402D00F4E075 /* TVPosterView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TVPosterView.storyboard; sourceTree = "<group>"; };
+		F398D341213143B700F4E075 /* TVPosterViewSampleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TVPosterViewSampleController.swift; sourceTree = "<group>"; };
+		F398D347213145B700F4E075 /* UIView+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Utils.swift"; sourceTree = "<group>"; };
+		F398D34A21325B9D00F4E075 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		F398D34C21325B9D00F4E075 /* SampleBooks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleBooks.swift; sourceTree = "<group>"; };
+		F3C03F43212E9CF8002F69C2 /* app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = app.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3C03F4F212E9CFA002F69C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3C03F58212E9E62002F69C2 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F3C03F5B212E9E62002F69C2 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F3C03F5C212E9E62002F69C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F3C03F61212E9EEE002F69C2 /* TVUIKit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TVUIKit.storyboard; sourceTree = "<group>"; };
+		F3E9C2B02132AEB500AD96F3 /* BookCardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookCardView.xib; sourceTree = "<group>"; };
+		F3E9C2B32132AFE700AD96F3 /* BookCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookCardView.swift; sourceTree = "<group>"; };
+		F3E9C2B52132B0F500AD96F3 /* TVCardView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TVCardView.storyboard; sourceTree = "<group>"; };
+		F3E9C2B72132B13400AD96F3 /* TVCardViewSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TVCardViewSampleViewController.swift; sourceTree = "<group>"; };
+		F3E9C2BB2132B67600AD96F3 /* UINib+Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINib+Util.swift"; sourceTree = "<group>"; };
+		F3E9C2BD2132F83C00AD96F3 /* TVMonogramViewSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TVMonogramViewSampleViewController.swift; sourceTree = "<group>"; };
+		F3E9C2BF2132F85100AD96F3 /* TVMonogramView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TVMonogramView.storyboard; sourceTree = "<group>"; };
+		F3E9C2C12132FA5500AD96F3 /* SampleAuthors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleAuthors.swift; sourceTree = "<group>"; };
+		F3E9C2C32132FA5C00AD96F3 /* Author.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
+		F3F80B68213290190086BBFB /* ButtonObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonObject.swift; sourceTree = "<group>"; };
+		F3F80B6A213290D20086BBFB /* SampleButtonObjects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleButtonObjects.swift; sourceTree = "<group>"; };
+		F3F80B6C2132911E0086BBFB /* TVCaptionButtonView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TVCaptionButtonView.storyboard; sourceTree = "<group>"; };
+		F3F80B6E213292620086BBFB /* TVCaptionButtonViewSampleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TVCaptionButtonViewSampleController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F3C03F40212E9CF8002F69C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F398D346213145B700F4E075 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				F398D347213145B700F4E075 /* UIView+Utils.swift */,
+				F358797721357373008C4697 /* UIView+Inspectable.swift */,
+				F3E9C2BB2132B67600AD96F3 /* UINib+Util.swift */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
+		F398D34921325B9D00F4E075 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				F398D34A21325B9D00F4E075 /* Book.swift */,
+				F3F80B68213290190086BBFB /* ButtonObject.swift */,
+				F3E9C2C32132FA5C00AD96F3 /* Author.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		F398D34B21325B9D00F4E075 /* dataSource */ = {
+			isa = PBXGroup;
+			children = (
+				F398D34C21325B9D00F4E075 /* SampleBooks.swift */,
+				F3F80B6A213290D20086BBFB /* SampleButtonObjects.swift */,
+				F3E9C2C12132FA5500AD96F3 /* SampleAuthors.swift */,
+			);
+			path = dataSource;
+			sourceTree = "<group>";
+		};
+		F3C03F3A212E9CF8002F69C2 = {
+			isa = PBXGroup;
+			children = (
+				F3C03F45212E9CF8002F69C2 /* app */,
+				F3C03F44212E9CF8002F69C2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F3C03F44212E9CF8002F69C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3C03F43212E9CF8002F69C2 /* app.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3C03F45212E9CF8002F69C2 /* app */ = {
+			isa = PBXGroup;
+			children = (
+				F3C03F4F212E9CFA002F69C2 /* Info.plist */,
+				F3C03F55212E9E62002F69C2 /* code */,
+				F3C03F59212E9E62002F69C2 /* resource */,
+			);
+			path = app;
+			sourceTree = "<group>";
+		};
+		F3C03F55212E9E62002F69C2 /* code */ = {
+			isa = PBXGroup;
+			children = (
+				F398D34921325B9D00F4E075 /* model */,
+				F3E9C2B22132AFE700AD96F3 /* view */,
+				F3C03F56212E9E62002F69C2 /* controller */,
+				F398D34B21325B9D00F4E075 /* dataSource */,
+				F398D346213145B700F4E075 /* extension */,
+			);
+			path = code;
+			sourceTree = "<group>";
+		};
+		F3C03F56212E9E62002F69C2 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				F3C03F58212E9E62002F69C2 /* AppDelegate.swift */,
+				F398D341213143B700F4E075 /* TVPosterViewSampleController.swift */,
+				F3F80B6E213292620086BBFB /* TVCaptionButtonViewSampleController.swift */,
+				F3E9C2B72132B13400AD96F3 /* TVCardViewSampleViewController.swift */,
+				F3E9C2BD2132F83C00AD96F3 /* TVMonogramViewSampleViewController.swift */,
+				F3108D0B2133A60D00E9B6B2 /* TVLockupViewSampleController.swift */,
+				F3108D052133A43700E9B6B2 /* TVDigitEntrySampleViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		F3C03F59212E9E62002F69C2 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				F3C03F5A212E9E62002F69C2 /* storyboard */,
+				F3E9C2AF2132AE9D00AD96F3 /* xib */,
+				F3C03F5C212E9E62002F69C2 /* Assets.xcassets */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
+		F3C03F5A212E9E62002F69C2 /* storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				F3C03F5B212E9E62002F69C2 /* Main.storyboard */,
+				F3C03F61212E9EEE002F69C2 /* TVUIKit.storyboard */,
+				F398D33F2131402D00F4E075 /* TVPosterView.storyboard */,
+				F3F80B6C2132911E0086BBFB /* TVCaptionButtonView.storyboard */,
+				F3E9C2B52132B0F500AD96F3 /* TVCardView.storyboard */,
+				F3E9C2BF2132F85100AD96F3 /* TVMonogramView.storyboard */,
+				F3108D092133A5EC00E9B6B2 /* TVLockupView.storyboard */,
+				F3108D072133A44900E9B6B2 /* TVDigitEntryViewController.storyboard */,
+			);
+			path = storyboard;
+			sourceTree = "<group>";
+		};
+		F3E9C2AF2132AE9D00AD96F3 /* xib */ = {
+			isa = PBXGroup;
+			children = (
+				F3E9C2B02132AEB500AD96F3 /* BookCardView.xib */,
+				F358797521357239008C4697 /* FaceView.xib */,
+			);
+			path = xib;
+			sourceTree = "<group>";
+		};
+		F3E9C2B22132AFE700AD96F3 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				F3E9C2B32132AFE700AD96F3 /* BookCardView.swift */,
+				F35879732135722B008C4697 /* FaceView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F3C03F42212E9CF8002F69C2 /* app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3C03F52212E9CFA002F69C2 /* Build configuration list for PBXNativeTarget "app" */;
+			buildPhases = (
+				F3C03F3F212E9CF8002F69C2 /* Sources */,
+				F3C03F40212E9CF8002F69C2 /* Frameworks */,
+				F3C03F41212E9CF8002F69C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = app;
+			productName = tvOS12Samples;
+			productReference = F3C03F43212E9CF8002F69C2 /* app.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F3C03F3B212E9CF8002F69C2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = Spinners;
+				TargetAttributes = {
+					F3C03F42212E9CF8002F69C2 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = F3C03F3E212E9CF8002F69C2 /* Build configuration list for PBXProject "tvOS12Samples" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F3C03F3A212E9CF8002F69C2;
+			productRefGroup = F3C03F44212E9CF8002F69C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F3C03F42212E9CF8002F69C2 /* app */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F3C03F41212E9CF8002F69C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F358797621357239008C4697 /* FaceView.xib in Resources */,
+				F3E9C2B62132B0F500AD96F3 /* TVCardView.storyboard in Resources */,
+				F3F80B6D2132911E0086BBFB /* TVCaptionButtonView.storyboard in Resources */,
+				F398D3402131402D00F4E075 /* TVPosterView.storyboard in Resources */,
+				F3108D082133A44900E9B6B2 /* TVDigitEntryViewController.storyboard in Resources */,
+				F3E9C2B12132AEB500AD96F3 /* BookCardView.xib in Resources */,
+				F3C03F62212E9EEE002F69C2 /* TVUIKit.storyboard in Resources */,
+				F3E9C2C02132F85100AD96F3 /* TVMonogramView.storyboard in Resources */,
+				F3C03F60212E9E62002F69C2 /* Assets.xcassets in Resources */,
+				F3C03F5F212E9E62002F69C2 /* Main.storyboard in Resources */,
+				F3108D0A2133A5EC00E9B6B2 /* TVLockupView.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F3C03F3F212E9CF8002F69C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F398D34D21325B9D00F4E075 /* Book.swift in Sources */,
+				F3E9C2BE2132F83C00AD96F3 /* TVMonogramViewSampleViewController.swift in Sources */,
+				F35879742135722B008C4697 /* FaceView.swift in Sources */,
+				F3F80B6F213292630086BBFB /* TVCaptionButtonViewSampleController.swift in Sources */,
+				F3F80B6B213290D20086BBFB /* SampleButtonObjects.swift in Sources */,
+				F3C03F5E212E9E62002F69C2 /* AppDelegate.swift in Sources */,
+				F3E9C2BC2132B67600AD96F3 /* UINib+Util.swift in Sources */,
+				F358797821357373008C4697 /* UIView+Inspectable.swift in Sources */,
+				F398D34E21325B9D00F4E075 /* SampleBooks.swift in Sources */,
+				F398D348213145B700F4E075 /* UIView+Utils.swift in Sources */,
+				F3E9C2C22132FA5500AD96F3 /* SampleAuthors.swift in Sources */,
+				F3F80B69213290190086BBFB /* ButtonObject.swift in Sources */,
+				F3E9C2B82132B13400AD96F3 /* TVCardViewSampleViewController.swift in Sources */,
+				F3E9C2B42132AFE700AD96F3 /* BookCardView.swift in Sources */,
+				F3E9C2C42132FA5C00AD96F3 /* Author.swift in Sources */,
+				F398D342213143B700F4E075 /* TVPosterViewSampleController.swift in Sources */,
+				F3108D0C2133A60D00E9B6B2 /* TVLockupViewSampleController.swift in Sources */,
+				F3108D062133A43700E9B6B2 /* TVDigitEntrySampleViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F3C03F50212E9CFA002F69C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 12.0;
+			};
+			name = Debug;
+		};
+		F3C03F51212E9CFA002F69C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = appletvos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TVOS_DEPLOYMENT_TARGET = 12.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F3C03F53212E9CFA002F69C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5AXCX2DUCQ;
+				INFOPLIST_FILE = app/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = work.spinners.tvOS12Samples;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Debug;
+		};
+		F3C03F54212E9CFA002F69C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5AXCX2DUCQ;
+				INFOPLIST_FILE = app/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = work.spinners.tvOS12Samples;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F3C03F3E212E9CF8002F69C2 /* Build configuration list for PBXProject "tvOS12Samples" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3C03F50212E9CFA002F69C2 /* Debug */,
+				F3C03F51212E9CFA002F69C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3C03F52212E9CFA002F69C2 /* Build configuration list for PBXNativeTarget "app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3C03F53212E9CFA002F69C2 /* Debug */,
+				F3C03F54212E9CFA002F69C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F3C03F3B212E9CF8002F69C2 /* Project object */;
+}

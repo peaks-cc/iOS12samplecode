@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="14313.13.2" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Dr5-LT-m0f">
+    <device id="appleTV" orientation="landscape">
+        <adaptation id="light"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--TVCardView-->
+        <scene sceneID="Fnw-kB-14t">
+            <objects>
+                <viewController id="Dr5-LT-m0f" customClass="TVCardViewSampleController" customModule="app" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Jnm-h1-0Hg"/>
+                        <viewControllerLayoutGuide type="bottom" id="9fX-A8-fSG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2NL-f9-sYE">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="UI1-c9-Llr">
+                                <rect key="frame" x="90" y="145" width="1740" height="875"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="60" minimumInteritemSpacing="20" id="GUG-eY-Zae">
+                                    <size key="itemSize" width="400" height="400"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="cfc-Yd-nzB">
+                                        <rect key="frame" x="0.0" y="0.0" width="400" height="400"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="400" height="400"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="Dr5-LT-m0f" id="O1K-vS-evJ"/>
+                                    <outlet property="delegate" destination="Dr5-LT-m0f" id="p18-KA-Syb"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="UI1-c9-Llr" firstAttribute="top" secondItem="Lqe-sq-OId" secondAttribute="top" id="8tj-dP-6oH"/>
+                            <constraint firstItem="Lqe-sq-OId" firstAttribute="leading" secondItem="UI1-c9-Llr" secondAttribute="leading" id="HZb-WI-Bic"/>
+                            <constraint firstItem="UI1-c9-Llr" firstAttribute="trailing" secondItem="Lqe-sq-OId" secondAttribute="trailing" id="ZxL-sO-s4m"/>
+                            <constraint firstItem="Lqe-sq-OId" firstAttribute="bottom" secondItem="UI1-c9-Llr" secondAttribute="bottom" id="tqZ-VM-yXL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Lqe-sq-OId"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="TVCardView" id="q3O-b4-EU3"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nFn-s6-Sm2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="64" y="-51"/>
+        </scene>
+    </scenes>
+</document>

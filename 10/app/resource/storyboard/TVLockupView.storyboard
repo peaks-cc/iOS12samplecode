@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="14313.13.2" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RMW-yf-9Jh">
+    <device id="appleTV" orientation="landscape">
+        <adaptation id="light"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--TVLockupView-->
+        <scene sceneID="3B1-qE-sv8">
+            <objects>
+                <viewController id="RMW-yf-9Jh" customClass="TVLockupViewSampleController" customModule="app" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WGj-Uq-Pw1"/>
+                        <viewControllerLayoutGuide type="bottom" id="nom-zi-WUC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Pm3-qt-oFG">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8bK-eO-enf">
+                                <rect key="frame" x="90" y="145" width="1740" height="875"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="60" minimumInteritemSpacing="20" id="nfy-IZ-gSI">
+                                    <size key="itemSize" width="400" height="400"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="dWs-j7-VXp">
+                                        <rect key="frame" x="0.0" y="0.0" width="400" height="400"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="400" height="400"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="RMW-yf-9Jh" id="ciW-lM-mYO"/>
+                                    <outlet property="delegate" destination="RMW-yf-9Jh" id="3vu-8p-xo9"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Cos-fb-HIf" firstAttribute="bottom" secondItem="8bK-eO-enf" secondAttribute="bottom" id="NUJ-er-819"/>
+                            <constraint firstItem="8bK-eO-enf" firstAttribute="trailing" secondItem="Cos-fb-HIf" secondAttribute="trailing" id="eqK-tx-vuW"/>
+                            <constraint firstItem="8bK-eO-enf" firstAttribute="top" secondItem="Cos-fb-HIf" secondAttribute="top" id="fje-xW-DCN"/>
+                            <constraint firstItem="Cos-fb-HIf" firstAttribute="leading" secondItem="8bK-eO-enf" secondAttribute="leading" id="he2-P8-64d"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Cos-fb-HIf"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="TVLockupView" id="WzY-vQ-Yvu"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IHt-6I-k3p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="64" y="-51"/>
+        </scene>
+    </scenes>
+</document>
