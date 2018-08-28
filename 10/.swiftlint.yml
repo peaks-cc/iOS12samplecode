@@ -1,0 +1,14 @@
+disabled_rules:
+  - trailing_comma
+line_length:
+  - 200
+identifier_name:
+  excluded:
+    - id
+    - vc
+    - on
+    - to
+    - os
+    - rx
+    - me
+    - ok
