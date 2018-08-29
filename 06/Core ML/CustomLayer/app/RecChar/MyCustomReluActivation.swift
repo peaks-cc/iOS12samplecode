@@ -9,6 +9,7 @@
 import Foundation
 import CoreML
 import Accelerate
+import Metal
 
 @objc(MyCustomReluActivation) public class MyCustomReluActivation: NSObject, MLCustomLayer {
         public required init(parameters: [String : Any]) throws {
@@ -26,7 +27,7 @@ import Accelerate
 //            }
         }
     
-        func encode(commandBuffer: MTLCommandBuffer, inputs: [MTLTexture], outputs: [MTLTexture]) throws {
+        public func encode(commandBuffer: MTLCommandBuffer, inputs: [MTLTexture], outputs: [MTLTexture]) throws {
         }
         
         public func outputShapes(forInputShapes inputShapes: [[NSNumber]]) throws -> [[NSNumber]] {
@@ -42,7 +43,7 @@ import Accelerate
             
             assert(input.count == output.count)
             
-            var count = Int32(input.count)
+            let count = Int32(input.count)
             let iptr = UnsafeMutablePointer<Float>(OpaquePointer(input.dataPointer))
             let optr = UnsafeMutablePointer<Float>(OpaquePointer(output.dataPointer))
             
