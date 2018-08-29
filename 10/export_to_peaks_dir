@@ -1,0 +1,3 @@
+#!/bin/sh
+
+git checkout-index -a -f --prefix=/Users/tokorom/develop/peaks/iOS12samplecode/10/

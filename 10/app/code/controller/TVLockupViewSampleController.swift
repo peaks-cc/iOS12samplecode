@@ -10,7 +10,7 @@ import TVUIKit
 class TVLockupViewSampleController: UIViewController {
     private enum Sample: Int, CaseIterable {
         case mimickedMonogramView
-        case additional
+        case customizedCaptionButton
     }
 
     private func addSampleView(to view: UIView, for indexPath: IndexPath) {
@@ -24,8 +24,8 @@ class TVLockupViewSampleController: UIViewController {
         switch sample {
         case .mimickedMonogramView:
             addMimickedMonogramView(to: view)
-        case .additional:
-            addMimickedMonogramView(to: view)
+        case .customizedCaptionButton:
+            addCustomizedCaptionButton(to: view)
         }
     }
 
@@ -93,6 +93,21 @@ class TVLockupViewSampleController: UIViewController {
             footerView.subtitleLabel?.layer.shadowOpacity = 0.3
             footerView.subtitleLabel?.layer.shadowOffset = CGSize(width: 0, height: 4)
         }
+    }
+
+    private func addCustomizedCaptionButton(to view: UIView) {
+        let captionButton = TVCaptionButtonView()
+
+        captionButton.contentText = "$5.99"
+        captionButton.title = "Footer"
+
+        let headerView = TVLockupHeaderFooterView()
+        headerView.showsOnlyWhenAncestorFocused = true
+        headerView.titleLabel?.text = "Header"
+        captionButton.headerView = headerView
+
+        captionButton.sizeToFit()
+        view.addSubview(captionButton)
     }
 }
 
