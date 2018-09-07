@@ -18,7 +18,6 @@
 		14120C8C1F2880760002ABE1 /* t10k-labels-idx1-ubyte in Resources */ = {isa = PBXBuildFile; fileRef = 14120C891F2880760002ABE1 /* t10k-labels-idx1-ubyte */; };
 		1430F296214108970005E17E /* Sigmoid.metal in Sources */ = {isa = PBXBuildFile; fileRef = 1430F295214108970005E17E /* Sigmoid.metal */; };
 		14BC7D4D212A32B00051D1F9 /* KerasMNIST_customlayer.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 14BC7D4C212A32B00051D1F9 /* KerasMNIST_customlayer.mlmodel */; };
-		14E4F217210A38A80041364B /* MyCustomReluActivation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E4F216210A38A80041364B /* MyCustomReluActivation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +35,6 @@
 		14120C891F2880760002ABE1 /* t10k-labels-idx1-ubyte */ = {isa = PBXFileReference; lastKnownFileType = file; path = "t10k-labels-idx1-ubyte"; sourceTree = "<group>"; };
 		1430F295214108970005E17E /* Sigmoid.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Sigmoid.metal; sourceTree = "<group>"; };
 		14BC7D4C212A32B00051D1F9 /* KerasMNIST_customlayer.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = KerasMNIST_customlayer.mlmodel; path = ../../KerasMNIST_customlayer.mlmodel; sourceTree = "<group>"; };
-		14E4F216210A38A80041364B /* MyCustomReluActivation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomReluActivation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +79,6 @@
 				14120C7C1F287E7D0002ABE1 /* LaunchScreen.storyboard */,
 				14120C7F1F287E7D0002ABE1 /* Info.plist */,
 				141132B4211A7B7800755B94 /* accelerate.playground */,
-				14E4F216210A38A80041364B /* MyCustomReluActivation.swift */,
 				1430F295214108970005E17E /* Sigmoid.metal */,
 			);
 			path = RecChar;
@@ -161,7 +158,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14E4F217210A38A80041364B /* MyCustomReluActivation.swift in Sources */,
 				14120C761F287E7D0002ABE1 /* ViewController.swift in Sources */,
 				14120C741F287E7D0002ABE1 /* AppDelegate.swift in Sources */,
 				1411B3CD2140F90200B73BE2 /* MyCustomSigmoid.swift in Sources */,
