@@ -17,11 +17,12 @@
 		14120C8B1F2880760002ABE1 /* MNISTLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14120C881F2880760002ABE1 /* MNISTLoader.swift */; };
 		14120C8C1F2880760002ABE1 /* t10k-labels-idx1-ubyte in Resources */ = {isa = PBXBuildFile; fileRef = 14120C891F2880760002ABE1 /* t10k-labels-idx1-ubyte */; };
 		1430F296214108970005E17E /* Sigmoid.metal in Sources */ = {isa = PBXBuildFile; fileRef = 1430F295214108970005E17E /* Sigmoid.metal */; };
+		1445E7072144C7400039B727 /* Relu.metal in Sources */ = {isa = PBXBuildFile; fileRef = 1445E7062144C7400039B727 /* Relu.metal */; };
+		1445E7092144C79D0039B727 /* MyCustomReLU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1445E7082144C79D0039B727 /* MyCustomReLU.swift */; };
 		14BC7D4D212A32B00051D1F9 /* KerasMNIST_customlayer.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 14BC7D4C212A32B00051D1F9 /* KerasMNIST_customlayer.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		141132B4211A7B7800755B94 /* accelerate.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = accelerate.playground; path = ../../../../../../../Desktop/accelerate.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		1411B3CC2140F90200B73BE2 /* MyCustomSigmoid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomSigmoid.swift; sourceTree = "<group>"; };
 		14120C701F287E7D0002ABE1 /* RecChar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecChar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14120C731F287E7D0002ABE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +35,8 @@
 		14120C881F2880760002ABE1 /* MNISTLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MNISTLoader.swift; sourceTree = "<group>"; };
 		14120C891F2880760002ABE1 /* t10k-labels-idx1-ubyte */ = {isa = PBXFileReference; lastKnownFileType = file; path = "t10k-labels-idx1-ubyte"; sourceTree = "<group>"; };
 		1430F295214108970005E17E /* Sigmoid.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Sigmoid.metal; sourceTree = "<group>"; };
+		1445E7062144C7400039B727 /* Relu.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Relu.metal; sourceTree = "<group>"; };
+		1445E7082144C79D0039B727 /* MyCustomReLU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomReLU.swift; sourceTree = "<group>"; };
 		14BC7D4C212A32B00051D1F9 /* KerasMNIST_customlayer.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = KerasMNIST_customlayer.mlmodel; path = ../../KerasMNIST_customlayer.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				1411B3CC2140F90200B73BE2 /* MyCustomSigmoid.swift */,
+				1445E7082144C79D0039B727 /* MyCustomReLU.swift */,
 				14BC7D4C212A32B00051D1F9 /* KerasMNIST_customlayer.mlmodel */,
 				14120C871F2880760002ABE1 /* t10k-images-idx3-ubyte */,
 				14120C891F2880760002ABE1 /* t10k-labels-idx1-ubyte */,
@@ -78,8 +82,8 @@
 				14120C7A1F287E7D0002ABE1 /* Assets.xcassets */,
 				14120C7C1F287E7D0002ABE1 /* LaunchScreen.storyboard */,
 				14120C7F1F287E7D0002ABE1 /* Info.plist */,
-				141132B4211A7B7800755B94 /* accelerate.playground */,
 				1430F295214108970005E17E /* Sigmoid.metal */,
+				1445E7062144C7400039B727 /* Relu.metal */,
 			);
 			path = RecChar;
 			sourceTree = "<group>";
@@ -162,7 +166,9 @@
 				14120C741F287E7D0002ABE1 /* AppDelegate.swift in Sources */,
 				1411B3CD2140F90200B73BE2 /* MyCustomSigmoid.swift in Sources */,
 				14BC7D4D212A32B00051D1F9 /* KerasMNIST_customlayer.mlmodel in Sources */,
+				1445E7072144C7400039B727 /* Relu.metal in Sources */,
 				14120C8B1F2880760002ABE1 /* MNISTLoader.swift in Sources */,
+				1445E7092144C79D0039B727 /* MyCustomReLU.swift in Sources */,
 				1430F296214108970005E17E /* Sigmoid.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
