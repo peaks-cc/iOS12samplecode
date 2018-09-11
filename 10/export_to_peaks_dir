@@ -1,3 +1,16 @@
 #!/bin/sh
 
-git checkout-index -a -f --prefix=/Users/tokorom/develop/peaks/iOS12samplecode/10/
+TARGETDIR="/Users/tokorom/develop/peaks/iOS12samplecode/10/"
+
+pushd $TARGETDIR
+git pull
+popd
+
+git checkout-index -a -f --prefix=$TARGETDIR
+
+pushd $TARGETDIR
+git add .
+git commit -m "10章 tvOS12 のサンプルコードを更新"
+git pull
+git push
+popd

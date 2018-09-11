@@ -19,41 +19,29 @@ class TVPosterViewSampleController: UIViewController {
     }
 
     private func adoptSubview(to cell: UICollectionViewCell, for indexPath: IndexPath) {
+        guard let book = book(for: indexPath) else {
+            return
+        }
+
+        let contentView = cell.contentView
+
         let posterView: TVPosterView = {
-            let contentView = cell.contentView
             if let posterView = contentView.searchSubview(for: TVPosterView.self) {
                 return posterView
             }
 
             let posterView = TVPosterView(image: nil)
             posterView.frame = contentView.bounds
-
-            /*
-            print("### contentView: \(posterView.contentView)")
-            print("### contentSize: \(posterView.contentSize)")
-            print("### contentViewInsets: \(posterView.contentViewInsets)")
-            print("### headerView: \(posterView.headerView)")
-            print("### footerView: \(posterView.footerView)")
-            print("### focusSizeIncrease: \(posterView.focusSizeIncrease)")
-            */
-
-            // 画像部分のsizeを指定
-            // posterView.imageView.frame.size = CGSize(width: 50, height: 100)
-            // posterView.imageView.contentMode = .scaleAspectFit
-            // print("### xxx: \(posterView.imageView.contentMode.rawValue)")
-
-            posterView.autoresizingMask = [.flexibleLeftMargin, .flexibleRightMargin, .flexibleTopMargin, .flexibleBottomMargin]
-            contentView.addSubview(posterView)
             return posterView
         }()
 
-        guard let book = book(for: indexPath) else {
-            return
-        }
+        posterView.removeFromSuperview()
 
+        posterView.image = UIImage(named: book.imageName)
         posterView.title = book.title
         posterView.subtitle = book.subtitle
-        posterView.image = UIImage(named: book.imageName)
+
+        contentView.addSubview(posterView)
     }
 }
 

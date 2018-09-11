@@ -45,7 +45,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="1640" height="66"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="パスワードAutoFill関連" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7da-Bt-kFd">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="パスワード・オートフィル" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7da-Bt-kFd">
                                                     <rect key="frame" x="20" y="0.0" width="1620" height="66"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="38"/>
@@ -54,6 +54,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="sxg-Qg-amo" kind="show" id="OCz-8J-cgv"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="DWV-et-nV3" style="IBUITableViewCellStyleDefault" id="tLw-Fw-VGB">
                                         <rect key="frame" x="110" y="160" width="1700" height="66"/>
@@ -79,7 +82,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="1640" height="66"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="その他" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="64Q-pq-Zja">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="UIKit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="64Q-pq-Zja">
                                                     <rect key="frame" x="20" y="0.0" width="1620" height="66"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="38"/>
@@ -88,6 +91,29 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="cIU-8Q-9iY" kind="show" id="2FJ-Ga-EGl"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="trd-c5-Ncp" style="IBUITableViewCellStyleDefault" id="Yu3-si-taE">
+                                        <rect key="frame" x="110" y="320" width="1700" height="66"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Yu3-si-taE" id="w4L-6E-ioL">
+                                            <rect key="frame" x="0.0" y="0.0" width="1640" height="66"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="デバッグ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="trd-c5-Ncp">
+                                                    <rect key="frame" x="20" y="0.0" width="1620" height="66"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="P8f-Iy-Jhc" kind="show" id="LlZ-6c-CqV"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -110,6 +136,30 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uFR-lm-GPh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1626" y="-390"/>
+        </scene>
+        <!--PasswordAutoFill-->
+        <scene sceneID="fls-1m-tfS">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PasswordAutoFill" id="sxg-Qg-amo" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nR4-8a-cUP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1710" y="-109"/>
+        </scene>
+        <!--UIKit-->
+        <scene sceneID="Qqf-rJ-uNF">
+            <objects>
+                <viewControllerPlaceholder storyboardName="UIKit" id="cIU-8Q-9iY" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kwu-sQ-C6W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1649" y="92"/>
+        </scene>
+        <!--Debug-->
+        <scene sceneID="ZgW-eC-tQ7">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Debug" id="P8f-Iy-Jhc" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1wc-RP-It5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1513" y="228"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zqc-ub-GSc">

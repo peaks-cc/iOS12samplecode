@@ -2,6 +2,8 @@ disabled_rules:
   - trailing_comma
 line_length:
   - 200
+cyclomatic_complexity:
+  - 12
 identifier_name:
   excluded:
     - id

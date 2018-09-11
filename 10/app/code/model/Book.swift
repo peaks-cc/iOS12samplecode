@@ -11,4 +11,5 @@ struct Book {
     let subtitle: String
     let imageName: String
     let smallImageName: String
+    let price: String
 }

@@ -10,6 +10,7 @@ class BookCardView: UIView {
     @IBOutlet weak var titleLabel: UILabel?
     @IBOutlet weak var subtitleLabel: UILabel?
     @IBOutlet weak var imageView: UIImageView?
+    @IBOutlet weak var priceLabel: UILabel?
 
     var title: String? {
         get {
@@ -38,10 +39,12 @@ class BookCardView: UIView {
         }
     }
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-
-        titleLabel?.enablesMarqueeWhenAncestorFocused = true
-        subtitleLabel?.enablesMarqueeWhenAncestorFocused = true
+    var price: String? {
+        get {
+            return priceLabel?.text
+        }
+        set {
+            priceLabel?.text = newValue
+        }
     }
 }

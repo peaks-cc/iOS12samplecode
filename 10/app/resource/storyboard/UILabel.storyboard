@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="14313.13.2" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Zhm-CX-pcv">
+    <device id="appleTV" orientation="landscape">
+        <adaptation id="light"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--UILabel-->
+        <scene sceneID="LCh-VF-67p">
+            <objects>
+                <tableViewController id="Zhm-CX-pcv" customClass="UILabelSampleViewController" customModule="app" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" sectionHeaderHeight="66" sectionFooterHeight="66" id="IIQ-9c-Baa">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <sections>
+                            <tableViewSection headerTitle="enablesMarqueeWhenAncestorFocused = false" id="CBB-RM-gyl">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="m3Z-lW-dBN">
+                                        <rect key="frame" x="110" y="66" width="1700" height="66"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="m3Z-lW-dBN" id="fSr-nP-sJz">
+                                            <rect key="frame" x="0.0" y="0.0" width="1700" height="66"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="長い長いながーーーーーーーーーーーーーーーーーーーーい文字列がはみ出てしまっているよ、marqueeするかな？？？　終わり。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gkQ-Wo-NGk">
+                                                    <rect key="frame" x="20" y="-3" width="1660" height="72"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="gkQ-Wo-NGk" firstAttribute="centerY" secondItem="fSr-nP-sJz" secondAttribute="centerY" id="40X-7G-iCc"/>
+                                                <constraint firstAttribute="trailing" secondItem="gkQ-Wo-NGk" secondAttribute="trailing" constant="20" id="WZV-5y-MmJ"/>
+                                                <constraint firstItem="gkQ-Wo-NGk" firstAttribute="leading" secondItem="fSr-nP-sJz" secondAttribute="leading" constant="20" id="bPg-ii-MiS"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="enablesMarqueeWhenAncestorFocused = true" id="wfA-uB-pf0">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="XOQ-pn-cLC">
+                                        <rect key="frame" x="110" y="212" width="1700" height="66"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XOQ-pn-cLC" id="7xs-b0-kpl">
+                                            <rect key="frame" x="0.0" y="0.0" width="1700" height="66"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="長い長いながーーーーーーーーーーーーーーーーーーーーい文字列がはみ出てしまっているよ、marqueeするかな？？？　終わり。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Sw-hd-HcY">
+                                                    <rect key="frame" x="20" y="-3" width="1660" height="72"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="8Sw-hd-HcY" firstAttribute="leading" secondItem="7xs-b0-kpl" secondAttribute="leading" constant="20" id="Trt-cr-tAN"/>
+                                                <constraint firstAttribute="trailing" secondItem="8Sw-hd-HcY" secondAttribute="trailing" constant="20" id="eJu-th-tub"/>
+                                                <constraint firstItem="8Sw-hd-HcY" firstAttribute="centerY" secondItem="7xs-b0-kpl" secondAttribute="centerY" id="mRD-4k-Yxu"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="Zhm-CX-pcv" id="0N0-W9-L51"/>
+                            <outlet property="delegate" destination="Zhm-CX-pcv" id="9dx-NH-cAi"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="UILabel" id="xkx-ho-VwK"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="withMarqueeLabel" destination="8Sw-hd-HcY" id="gAe-sM-r6L"/>
+                        <outlet property="withoutMarqueeLabel" destination="gkQ-Wo-NGk" id="skk-zd-OKo"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bd5-nX-hj0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-76" y="-117"/>
+        </scene>
+    </scenes>
+</document>

@@ -24,22 +24,19 @@ class TVCardViewSampleController: UIViewController {
             if let cardView = contentView.searchSubview(for: TVCardView.self) {
                 return cardView
             }
+
             let cardView = TVCardView()
             cardView.frame = contentView.bounds
-            // cardView.cardBackgroundColor = UIColor.red
-            cardView.autoresizingMask = [.flexibleLeftMargin, .flexibleRightMargin, .flexibleTopMargin, .flexibleBottomMargin]
+            // cardView.cardBackgroundColor = UIColor.black
             contentView.addSubview(cardView)
+
             guard let bookCard: BookCardView = UINib.load() else {
                 return cardView
             }
-            let padding: CGFloat = 20
-            bookCard.frame = CGRect(
-                x: padding,
-                y: padding,
-                width: cardView.bounds.width - padding * 2,
-                height: cardView.bounds.height - padding * 2
-            )
-            bookCard.autoresizingMask = [.flexibleLeftMargin, .flexibleRightMargin, .flexibleTopMargin, .flexibleBottomMargin]
+
+            let insets = cardView.focusSizeIncrease
+            let size = cardView.bounds.insetBy(dx: -insets.leading, dy: -insets.top).size
+            bookCard.frame = CGRect(origin: .zero, size: size)
             cardView.contentView.addSubview(bookCard)
             return cardView
         }()
@@ -55,6 +52,7 @@ class TVCardViewSampleController: UIViewController {
         bookCard.title = book.title
         bookCard.subtitle = book.subtitle
         bookCard.image = UIImage(named: book.imageName)
+        bookCard.price = book.price
     }
 }
 
