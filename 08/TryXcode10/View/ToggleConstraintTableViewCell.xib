@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="136" id="qZf-En-h2L" customClass="ToggleConstraintTableViewCell" customModule="TryXcode10" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="136"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qZf-En-h2L" id="GEW-Ap-Kjm">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="135.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Xcode 10では開発効率を上げる機能がさらに追加されました。複数行の同時選択が可能になり、エディタ上でソース変更が強調されます。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lEH-ZF-BUe">
+                        <rect key="frame" x="16" y="11" width="343" height="85.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lfr-vO-qCb">
+                        <rect key="frame" x="16" y="104.5" width="343" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Lfr-vO-qCb" firstAttribute="leading" secondItem="GEW-Ap-Kjm" secondAttribute="leadingMargin" id="3Ne-DN-Yn8"/>
+                    <constraint firstItem="Lfr-vO-qCb" firstAttribute="top" secondItem="lEH-ZF-BUe" secondAttribute="bottom" constant="8" id="GpH-xU-xtW"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Lfr-vO-qCb" secondAttribute="bottom" id="SRL-fX-frg"/>
+                    <constraint firstItem="lEH-ZF-BUe" firstAttribute="trailing" secondItem="GEW-Ap-Kjm" secondAttribute="trailingMargin" id="Xy2-NJ-liH"/>
+                    <constraint firstItem="lEH-ZF-BUe" firstAttribute="leading" secondItem="GEW-Ap-Kjm" secondAttribute="leadingMargin" id="eKJ-bE-fOp"/>
+                    <constraint firstItem="lEH-ZF-BUe" firstAttribute="top" secondItem="GEW-Ap-Kjm" secondAttribute="topMargin" id="eNb-D2-m67"/>
+                    <constraint firstItem="Lfr-vO-qCb" firstAttribute="trailing" secondItem="GEW-Ap-Kjm" secondAttribute="trailingMargin" id="oY7-fY-nXX"/>
+                    <constraint firstAttribute="bottom" secondItem="lEH-ZF-BUe" secondAttribute="bottom" id="qlE-2u-lXx"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="qlE-2u-lXx"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bottomConstraintForBottomLabel" destination="SRL-fX-frg" id="bk3-ZH-we8"/>
+                <outlet property="bottomConstraintForTopLabel" destination="qlE-2u-lXx" id="MQh-Aw-nDP"/>
+                <outlet property="bottomLabel" destination="Lfr-vO-qCb" id="Bu0-wC-f1g"/>
+                <outlet property="leadingConstraintForBottomLabel" destination="3Ne-DN-Yn8" id="w4W-ee-lsN"/>
+                <outlet property="tobLabel" destination="lEH-ZF-BUe" id="se3-EW-rJ2"/>
+                <outlet property="topConstraintForBottomLabel" destination="GpH-xU-xtW" id="mXQ-rO-NgP"/>
+                <outlet property="trailingConstraintForBottomLabel" destination="oY7-fY-nXX" id="XPI-1O-jix"/>
+            </connections>
+            <point key="canvasLocation" x="138.40000000000001" y="129.53523238380811"/>
+        </tableViewCell>
+    </objects>
+</document>

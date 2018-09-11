@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="124" id="pJd-wN-WW8" customClass="RemoveConstrainTableViewCell" customModule="TryXcode10" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="124"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pJd-wN-WW8" id="DXU-Bf-sLS">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="123.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Xcode 10では開発効率を上げる機能がさらに追加されました。複数行の同時選択が可能になり、エディタ上でソース変更が強調されます。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lem-Mb-jHb">
+                        <rect key="frame" x="16" y="11" width="343" height="73.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ZF-9i-RVO">
+                        <rect key="frame" x="16" y="92.5" width="343" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="lem-Mb-jHb" firstAttribute="trailing" secondItem="DXU-Bf-sLS" secondAttribute="trailingMargin" id="0KH-J1-I9h"/>
+                    <constraint firstItem="7ZF-9i-RVO" firstAttribute="top" secondItem="lem-Mb-jHb" secondAttribute="bottom" constant="8" id="2YN-OJ-sSm"/>
+                    <constraint firstItem="7ZF-9i-RVO" firstAttribute="trailing" secondItem="DXU-Bf-sLS" secondAttribute="trailingMargin" id="OIM-5k-Onb"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="7ZF-9i-RVO" secondAttribute="bottom" id="R7V-rP-qjG"/>
+                    <constraint firstItem="lem-Mb-jHb" firstAttribute="leading" secondItem="DXU-Bf-sLS" secondAttribute="leadingMargin" id="SuP-lR-3KQ"/>
+                    <constraint firstItem="lem-Mb-jHb" firstAttribute="top" secondItem="DXU-Bf-sLS" secondAttribute="topMargin" id="WIN-7W-IPD"/>
+                    <constraint firstItem="7ZF-9i-RVO" firstAttribute="leading" secondItem="DXU-Bf-sLS" secondAttribute="leadingMargin" id="yHH-Jh-wfJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bottomLabel" destination="7ZF-9i-RVO" id="WiJ-MY-Lca"/>
+                <outlet property="topLabel" destination="lem-Mb-jHb" id="rNS-iK-Fep"/>
+            </connections>
+            <point key="canvasLocation" x="247" y="31"/>
+        </tableViewCell>
+    </objects>
+</document>
