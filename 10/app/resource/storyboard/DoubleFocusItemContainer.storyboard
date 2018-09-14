@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="14313.18" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lfv-dC-xCg">
+    <device id="appleTV" orientation="landscape">
+        <adaptation id="light"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Double FocusItemContainer-->
+        <scene sceneID="N4C-Yw-rwe">
+            <objects>
+                <viewController id="lfv-dC-xCg" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="K6q-Iv-eD1"/>
+                        <viewControllerLayoutGuide type="bottom" id="toN-ti-kGu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="q0f-4d-KXD">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VSC-rO-dJD" customClass="CanvasView" customModule="app" customModuleProvider="target">
+                                <rect key="frame" x="90" y="145" width="850" height="875"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e5m-A9-D2A" customClass="CanvasView" customModule="app" customModuleProvider="target">
+                                <rect key="frame" x="980" y="145" width="850" height="875"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="e5m-A9-D2A" firstAttribute="leading" secondItem="VSC-rO-dJD" secondAttribute="trailing" constant="40" id="KhD-Ng-1UD"/>
+                            <constraint firstItem="b3X-Yd-yUM" firstAttribute="top" secondItem="e5m-A9-D2A" secondAttribute="top" id="NlT-cp-ZdQ"/>
+                            <constraint firstItem="e5m-A9-D2A" firstAttribute="trailing" secondItem="b3X-Yd-yUM" secondAttribute="trailing" id="VBS-zX-L2M"/>
+                            <constraint firstItem="VSC-rO-dJD" firstAttribute="leading" secondItem="b3X-Yd-yUM" secondAttribute="leading" id="X3D-i4-71J"/>
+                            <constraint firstItem="e5m-A9-D2A" firstAttribute="width" secondItem="VSC-rO-dJD" secondAttribute="width" id="ibm-gC-fIk"/>
+                            <constraint firstItem="b3X-Yd-yUM" firstAttribute="bottom" secondItem="e5m-A9-D2A" secondAttribute="bottom" id="iiy-EL-pqs"/>
+                            <constraint firstItem="VSC-rO-dJD" firstAttribute="top" secondItem="b3X-Yd-yUM" secondAttribute="top" id="nEu-mw-0uN"/>
+                            <constraint firstItem="b3X-Yd-yUM" firstAttribute="bottom" secondItem="VSC-rO-dJD" secondAttribute="bottom" id="xEu-eu-tvl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="b3X-Yd-yUM"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Double FocusItemContainer" id="ZYT-eq-5AJ"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9cC-ZR-WVP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-115" y="-38"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="14313.18" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IYi-QR-BWb">
+    <device id="appleTV" orientation="landscape">
+        <adaptation id="light"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--フォーカス関連-->
+        <scene sceneID="rZx-jK-XDs">
+            <objects>
+                <tableViewController id="IYi-QR-BWb" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" sectionHeaderHeight="66" sectionFooterHeight="66" id="RA3-xl-oSB">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <sections>
+                            <tableViewSection id="bld-HR-vtZ">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="16s-mh-OAn" style="IBUITableViewCellStyleDefault" id="mAB-am-Jth">
+                                        <rect key="frame" x="110" y="0.0" width="1700" height="66"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mAB-am-Jth" id="YgB-lI-48x">
+                                            <rect key="frame" x="0.0" y="0.0" width="1640" height="66"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="UIFocusItemContainer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="16s-mh-OAn">
+                                                    <rect key="frame" x="20" y="0.0" width="1620" height="66"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="RXD-9i-Ogm" kind="show" id="GtF-cg-6Bi"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="IpG-lf-FUn" style="IBUITableViewCellStyleDefault" id="dSK-d8-NLX">
+                                        <rect key="frame" x="110" y="80" width="1700" height="66"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dSK-d8-NLX" id="p0r-dm-3tg">
+                                            <rect key="frame" x="0.0" y="0.0" width="1640" height="66"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="UIFocusItemContainer with Movement" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IpG-lf-FUn">
+                                                    <rect key="frame" x="20" y="0.0" width="1620" height="66"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Pls-0N-gxg" kind="show" id="cP2-iN-A2t"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="iCQ-XA-G9G" style="IBUITableViewCellStyleDefault" id="u7f-xn-z0b">
+                                        <rect key="frame" x="110" y="160" width="1700" height="66"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="u7f-xn-z0b" id="Eg3-x2-3ex">
+                                            <rect key="frame" x="0.0" y="0.0" width="1640" height="66"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Double FocusItemContainer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="iCQ-XA-G9G">
+                                                    <rect key="frame" x="20" y="0.0" width="1620" height="66"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="oFh-Nq-VeI" kind="show" id="X9Y-em-vff"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="xBG-YQ-4Pe" style="IBUITableViewCellStyleDefault" id="nP6-x8-8dH">
+                                        <rect key="frame" x="110" y="240" width="1700" height="66"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nP6-x8-8dH" id="dhd-U7-cjz">
+                                            <rect key="frame" x="0.0" y="0.0" width="1640" height="66"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="UIKit base UIFocusItemContainer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xBG-YQ-4Pe">
+                                                    <rect key="frame" x="20" y="0.0" width="1620" height="66"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="P1e-hL-kSQ" kind="show" id="6C6-e1-zc5"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="gJx-mz-z3H" style="IBUITableViewCellStyleDefault" id="46F-JA-avR">
+                                        <rect key="frame" x="110" y="320" width="1700" height="66"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="46F-JA-avR" id="ulu-aq-abE">
+                                            <rect key="frame" x="0.0" y="0.0" width="1640" height="66"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="UIFocusItemScrollableContainer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gJx-mz-z3H">
+                                                    <rect key="frame" x="20" y="0.0" width="1620" height="66"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Eue-Ba-MUc" kind="show" id="s0a-zC-rhx"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="IYi-QR-BWb" id="64W-qF-k22"/>
+                            <outlet property="delegate" destination="IYi-QR-BWb" id="gKu-zo-e6w"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="フォーカス関連" id="TQd-HI-puM"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="heT-D8-3hY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-119" y="-204"/>
+        </scene>
+        <!--UIFocusItemContainer-->
+        <scene sceneID="vi1-PR-1pU">
+            <objects>
+                <viewControllerPlaceholder storyboardName="UIFocusItemContainer" id="RXD-9i-Ogm" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5pN-KZ-yUM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1146" y="-386"/>
+        </scene>
+        <!--UIFocusItemContainerWithMovement-->
+        <scene sceneID="gqA-fO-8Dy">
+            <objects>
+                <viewControllerPlaceholder storyboardName="UIFocusItemContainerWithMovement" id="Pls-0N-gxg" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vo8-ZR-ZWu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1214" y="-218"/>
+        </scene>
+        <!--DoubleFocusItemContainer-->
+        <scene sceneID="Wd5-nj-YO9">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DoubleFocusItemContainer" id="oFh-Nq-VeI" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vWC-xF-h0m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1183" y="-83"/>
+        </scene>
+        <!--UIKitBaseContainer-->
+        <scene sceneID="ZgA-nD-nGU">
+            <objects>
+                <viewControllerPlaceholder storyboardName="UIKitBaseContainer" id="P1e-hL-kSQ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BN0-eb-qeb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1079" y="48"/>
+        </scene>
+        <!--UIFocusItemScrollableContainer-->
+        <scene sceneID="weh-r8-6ec">
+            <objects>
+                <viewControllerPlaceholder storyboardName="UIFocusItemScrollableContainer" id="Eue-Ba-MUc" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R9h-Ea-psI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1117" y="176"/>
+        </scene>
+    </scenes>
+</document>

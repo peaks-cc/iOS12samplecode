@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="14313.13.2" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Emp-6K-tcj">
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="14313.18" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Emp-6K-tcj">
     <device id="appleTV" orientation="landscape">
         <adaptation id="light"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -74,6 +74,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="OpI-oS-XWq" kind="show" id="nq3-bR-FCq"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="64Q-pq-Zja" style="IBUITableViewCellStyleDefault" id="7ak-6j-0nV">
                                         <rect key="frame" x="110" y="240" width="1700" height="66"/>
@@ -143,7 +146,15 @@
                 <viewControllerPlaceholder storyboardName="PasswordAutoFill" id="sxg-Qg-amo" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nR4-8a-cUP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1710" y="-109"/>
+            <point key="canvasLocation" x="1710" y="-226"/>
+        </scene>
+        <!--Focus-->
+        <scene sceneID="81e-ai-Ugg">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Focus" id="OpI-oS-XWq" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XK8-mD-H62" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1650" y="-59"/>
         </scene>
         <!--UIKit-->
         <scene sceneID="Qqf-rJ-uNF">
@@ -151,7 +162,7 @@
                 <viewControllerPlaceholder storyboardName="UIKit" id="cIU-8Q-9iY" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kwu-sQ-C6W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1649" y="92"/>
+            <point key="canvasLocation" x="1672" y="66"/>
         </scene>
         <!--Debug-->
         <scene sceneID="ZgW-eC-tQ7">

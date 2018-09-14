@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="14313.18" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Q4k-ZA-KcL">
+    <device id="appleTV" orientation="landscape">
+        <adaptation id="light"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--UIFocusItemContainer-->
+        <scene sceneID="ijj-fx-Ye0">
+            <objects>
+                <viewController id="Q4k-ZA-KcL" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UDv-F1-miG"/>
+                        <viewControllerLayoutGuide type="bottom" id="HBI-yT-fM3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hg5-LS-WcS">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Zs-6P-RTk" customClass="CanvasView" customModule="app" customModuleProvider="target">
+                                <rect key="frame" x="90" y="145" width="1740" height="875"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                            </view>
+                        </subviews>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="LNB-mA-3di" firstAttribute="trailing" secondItem="9Zs-6P-RTk" secondAttribute="trailing" id="Qqx-9X-vO5"/>
+                            <constraint firstItem="9Zs-6P-RTk" firstAttribute="top" secondItem="LNB-mA-3di" secondAttribute="top" id="Xod-JZ-yRM"/>
+                            <constraint firstItem="9Zs-6P-RTk" firstAttribute="leading" secondItem="LNB-mA-3di" secondAttribute="leading" id="ahu-eN-V8s"/>
+                            <constraint firstItem="LNB-mA-3di" firstAttribute="bottom" secondItem="9Zs-6P-RTk" secondAttribute="bottom" id="hhr-oC-oOd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LNB-mA-3di"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="UIFocusItemContainer" id="kMk-do-Igo"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eMd-cD-kkm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-115" y="-38"/>
+        </scene>
+    </scenes>
+</document>
