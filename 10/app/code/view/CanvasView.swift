@@ -128,7 +128,9 @@ extension Rect: UIFocusEnvironment {
     }
 
     // required
-    func didUpdateFocus(in context: UIFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) {
+    func didUpdateFocus(in context: UIFocusUpdateContext,
+                        with coordinator: UIFocusAnimationCoordinator) {
+
         if context.nextFocusedItem as? Rect == self {
             self.isFocused = true
         } else {

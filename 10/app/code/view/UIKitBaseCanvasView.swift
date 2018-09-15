@@ -28,7 +28,9 @@ class TransformedView: UIView {
         return superview
     }
 
-    override func didUpdateFocus(in context: UIFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) {
+    override func didUpdateFocus(in context: UIFocusUpdateContext,
+                                 with coordinator: UIFocusAnimationCoordinator) {
+
         coordinator.addCoordinatedAnimations({
             if context.nextFocusedItem as? TransformedView == self {
                 self.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
