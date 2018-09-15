@@ -9,17 +9,17 @@ import UIKit
 class MoveCanvasView: CanvasView {
     override func createRects() -> [Rect] {
         return [
-            MoveRect(x: 100, y: 100, color: UIColor.red.cgColor, parent: self),
-            MoveRect(x: 300, y: 100, color: UIColor.blue.cgColor, parent: self),
-            MoveRect(x: 100, y: 300, color: UIColor.green.cgColor, parent: self),
-            MoveRect(x: 300, y: 300, color: UIColor.red.cgColor, parent: self)
+            ShakableRect(x: 100, y: 100, color: UIColor.red.cgColor, parent: self),
+            ShakableRect(x: 300, y: 100, color: UIColor.blue.cgColor, parent: self),
+            ShakableRect(x: 100, y: 300, color: UIColor.green.cgColor, parent: self),
+            ShakableRect(x: 300, y: 300, color: UIColor.red.cgColor, parent: self)
         ]
     }
 }
 
-// MARK: - MoveRect
+// MARK: - ShakableRect
 
-class MoveRect: Rect {
+class ShakableRect: Rect {
     var translation: CGVector?
 
     override var renderFrame: CGRect {
@@ -32,7 +32,7 @@ class MoveRect: Rect {
     }
 }
 
-extension MoveRect { //< UIFocusItem
+extension ShakableRect { //< UIFocusItem
     func didHintFocusMovement(_ hint: UIFocusMovementHint) {
         self.translation = hint.translation
         parentView?.setNeedsDisplay()

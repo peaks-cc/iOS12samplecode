@@ -16,7 +16,7 @@ class ScrollableCanvasView: CanvasView, UIFocusItemScrollableContainer {
                     blue: CGFloat(index + 1) / 30,
                     alpha: 1
                 )
-                return MoveRect(
+                return ShakableRect(
                     x: 100 + 200 * CGFloat(index),
                     y: 100,
                     color: color.cgColor,

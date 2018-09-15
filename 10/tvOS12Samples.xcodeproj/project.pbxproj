@@ -29,6 +29,8 @@
 		F33CB4F72138FD3100D81ADB /* FocusableCollectionViewSampleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33CB4F62138FD3000D81ADB /* FocusableCollectionViewSampleController.swift */; };
 		F33CB4F92138FD4400D81ADB /* FocusableRawCollectionView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F33CB4F82138FD4400D81ADB /* FocusableRawCollectionView.storyboard */; };
 		F33CB4FB2138FDC200D81ADB /* FocusableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33CB4FA2138FDC200D81ADB /* FocusableImageView.swift */; };
+		F350738B214CAD2C00FD897F /* Accessibility.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F350738A214CAD2C00FD897F /* Accessibility.storyboard */; };
+		F350738D214CAD8400FD897F /* AccessibilitySampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F350738C214CAD8400FD897F /* AccessibilitySampleViewController.swift */; };
 		F35794E52147B2A600C466E6 /* UIKit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F35794E42147B2A600C466E6 /* UIKit.storyboard */; };
 		F35794E72147B2FE00C466E6 /* UILabel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F35794E62147B2FE00C466E6 /* UILabel.storyboard */; };
 		F35794E92147B4A400C466E6 /* UILabelSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35794E82147B4A400C466E6 /* UILabelSampleViewController.swift */; };
@@ -89,6 +91,8 @@
 		F33CB4F62138FD3000D81ADB /* FocusableCollectionViewSampleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusableCollectionViewSampleController.swift; sourceTree = "<group>"; };
 		F33CB4F82138FD4400D81ADB /* FocusableRawCollectionView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FocusableRawCollectionView.storyboard; sourceTree = "<group>"; };
 		F33CB4FA2138FDC200D81ADB /* FocusableImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusableImageView.swift; sourceTree = "<group>"; };
+		F350738A214CAD2C00FD897F /* Accessibility.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Accessibility.storyboard; sourceTree = "<group>"; };
+		F350738C214CAD8400FD897F /* AccessibilitySampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessibilitySampleViewController.swift; sourceTree = "<group>"; };
 		F35794E42147B2A600C466E6 /* UIKit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIKit.storyboard; sourceTree = "<group>"; };
 		F35794E62147B2FE00C466E6 /* UILabel.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UILabel.storyboard; sourceTree = "<group>"; };
 		F35794E82147B4A400C466E6 /* UILabelSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelSampleViewController.swift; sourceTree = "<group>"; };
@@ -236,6 +240,7 @@
 				F33CB4F22138FB1D00D81ADB /* RawCollectionViewWithButtonSampleController.swift */,
 				F33CB4F62138FD3000D81ADB /* FocusableCollectionViewSampleController.swift */,
 				F35794E82147B4A400C466E6 /* UILabelSampleViewController.swift */,
+				F350738C214CAD8400FD897F /* AccessibilitySampleViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -270,6 +275,7 @@
 				F3041E94214A6904005F7072 /* DoubleFocusItemContainer.storyboard */,
 				F3041E9C214B839F005F7072 /* UIKitBaseContainer.storyboard */,
 				F3041EA0214B8EF6005F7072 /* UIFocusItemScrollableContainer.storyboard */,
+				F350738A214CAD2C00FD897F /* Accessibility.storyboard */,
 				F33CB4EC2138F69300D81ADB /* Debug.storyboard */,
 				F33CB4EE2138F7DB00D81ADB /* RawCollectionView.storyboard */,
 				F33CB4F42138FBC100D81ADB /* RawCollectionViewWithButton.storyboard */,
@@ -430,6 +436,7 @@
 				F3C03F60212E9E62002F69C2 /* Assets.xcassets in Resources */,
 				F3C03F5F212E9E62002F69C2 /* Main.storyboard in Resources */,
 				F3108D0A2133A5EC00E9B6B2 /* TVLockupView.storyboard in Resources */,
+				F350738B214CAD2C00FD897F /* Accessibility.storyboard in Resources */,
 				F33CB4F52138FBC100D81ADB /* RawCollectionViewWithButton.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -453,6 +460,7 @@
 			files = (
 				F398D34D21325B9D00F4E075 /* Book.swift in Sources */,
 				F3E9C2BE2132F83C00AD96F3 /* TVMonogramViewSampleViewController.swift in Sources */,
+				F350738D214CAD8400FD897F /* AccessibilitySampleViewController.swift in Sources */,
 				F3041E93214A251A005F7072 /* CanvasView.swift in Sources */,
 				F3B28C892137453E0076E8A2 /* PasswordAutoFillSampleViewController.swift in Sources */,
 				F33CB4F72138FD3100D81ADB /* FocusableCollectionViewSampleController.swift in Sources */,
