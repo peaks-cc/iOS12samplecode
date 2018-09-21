@@ -53,7 +53,7 @@ class ViewController: UIViewController {
             guard let strongSelf = self else { return }
             DispatchQueue.main.async {
                 strongSelf.imageView.image = image
-                os_signpost(.end, log: OSLog.downloadImage, name: "download", signpostID: signpostID, "image: %s", image.description)
+                os_signpost(.end, log: OSLog.downloadImage, name: "download", signpostID: signpostID, "download end image: %s", image.description)
             }
         })
     }
