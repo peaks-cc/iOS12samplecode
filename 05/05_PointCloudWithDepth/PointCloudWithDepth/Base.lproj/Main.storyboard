@@ -34,7 +34,7 @@
                                 </connections>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PcE-WA-x3Y">
-                                <rect key="frame" x="142" y="615" width="91" height="32"/>
+                                <rect key="frame" x="142" y="595" width="91" height="32"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                                 <state key="normal" title="Open Picker"/>
                                 <connections>
@@ -49,7 +49,7 @@
                             <constraint firstAttribute="bottom" secondItem="OtL-GN-ZSn" secondAttribute="bottom" id="FgZ-vE-qvg"/>
                             <constraint firstItem="PcE-WA-x3Y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Goj-mB-VZ5"/>
                             <constraint firstItem="OtL-GN-ZSn" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="HuF-pH-y9K"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="PcE-WA-x3Y" secondAttribute="bottom" constant="20" id="In9-1W-mGa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="PcE-WA-x3Y" secondAttribute="bottom" constant="40" id="In9-1W-mGa"/>
                             <constraint firstItem="MhN-6A-Pa1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="NSG-27-s6R"/>
                             <constraint firstAttribute="trailing" secondItem="OtL-GN-ZSn" secondAttribute="trailing" id="caT-bo-eFr"/>
                             <constraint firstAttribute="bottom" secondItem="MhN-6A-Pa1" secondAttribute="bottom" id="eKA-ec-E0N"/>
