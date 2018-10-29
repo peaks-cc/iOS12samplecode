@@ -23,16 +23,9 @@ class RemoveConstrainTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
-    func config() {
-    }
-
-    override func updateConstraintsIfNeeded() {
-
-    }
     override func updateConstraints() {
         // 制約を削除する
         NSLayoutConstraint.deactivate(bottomLabel.constraints)
-        bottomLabel.removeConstraints(bottomLabel.constraints)
         // 子ビューを削除
         bottomLabel.removeFromSuperview()
         // 再びつける
