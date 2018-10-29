@@ -9,12 +9,11 @@
 import Foundation
 import os.signpost
 
-private let bundleID = Bundle.main.bundleIdentifier ?? ""
+let bundleID = Bundle.main.bundleIdentifier ?? ""
+let downloadImageLog = OSLog(subsystem: bundleID, category: "downloadLog")
+let removeConstraintsLog = OSLog(subsystem: bundleID, category: "removeConstraints")
+let toggleConstraintsLog = OSLog(subsystem: bundleID, category: "toggleConstraints")
 
 extension OSLog {
-
-    /// for measuring image download process.
-    static let downloadImage = OSLog(subsystem: bundleID, category: "downloadLog")
-    static let removeConstraints = OSLog(subsystem: bundleID, category: "removeConstraints")
     static let toggleConstraints = OSLog(subsystem: bundleID, category: "toggleConstraints")
 }

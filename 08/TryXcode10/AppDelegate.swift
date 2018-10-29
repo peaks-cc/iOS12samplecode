@@ -17,7 +17,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
-        os_signpost(.event, log: OSLog(subsystem: "com.personal-factory.TryXcode10", category: .pointsOfInterest), name: "didFinishLaunchingWithOptions")
+        os_signpost(.event,
+                    log: OSLog(subsystem: "com.personal-factory.TryXcode10",
+                               category: .pointsOfInterest),
+                    name: "didFinishLaunchingWithOptions")
 
         return true
     }

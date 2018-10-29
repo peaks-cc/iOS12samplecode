@@ -25,15 +25,15 @@ class RemoveConstraintsViewController: UIViewController {
     }
     @IBAction func refresh(_ sender: UIBarButtonItem) {
 
-        let signpostID = OSSignpostID(log: OSLog.removeConstraints)
+        let signpostID = OSSignpostID(log: removeConstraintsLog)
         os_signpost(.begin,
-                    log: OSLog.removeConstraints,
+                    log: removeConstraintsLog,
                     name: "reload data",
                     signpostID: signpostID,
                     "%s", self.description)
         tableView.reloadData()
         os_signpost(.end,
-                    log: OSLog.removeConstraints,
+                    log: removeConstraintsLog,
                     name: "reload data",
                     signpostID: signpostID,
                     "%s", "end")
