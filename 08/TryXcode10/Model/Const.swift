@@ -13,7 +13,3 @@ let bundleID = Bundle.main.bundleIdentifier ?? ""
 let downloadImageLog = OSLog(subsystem: bundleID, category: "downloadLog")
 let removeConstraintsLog = OSLog(subsystem: bundleID, category: "removeConstraints")
 let toggleConstraintsLog = OSLog(subsystem: bundleID, category: "toggleConstraints")
-
-extension OSLog {
-    static let toggleConstraints = OSLog(subsystem: bundleID, category: "toggleConstraints")
-}
