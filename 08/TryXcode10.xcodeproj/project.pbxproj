@@ -65,7 +65,7 @@
 		30729512210F4B830072984F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		308A0C7D21268E86005246A5 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
 		308A0C7E21268E86005246A5 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		30A5053C2187FDE000BBF058 /* StepByStep.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = StepByStep.playground; sourceTree = "<group>"; };
+		30A5053C2187FDE000BBF058 /* StepByStep.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = StepByStep.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		30A5053D2187FE1B00BBF058 /* output.xcfilelist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcfilelist; path = output.xcfilelist; sourceTree = "<group>"; };
 		30A5053E2187FE1B00BBF058 /* input.xcfilelist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcfilelist; path = input.xcfilelist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
