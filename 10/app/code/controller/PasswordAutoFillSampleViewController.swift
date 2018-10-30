@@ -11,6 +11,14 @@ class PasswordAutoFillSampleViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var logInButton: UIButton!
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // これが重要
+        // これをしないとテキスト入力画面から戻ってきたときに強制的にテキストフィールドにフォーカスが当たってしまう
+        self.restoresFocusAfterTransition = false
+    }
+
     override var preferredFocusEnvironments: [UIFocusEnvironment] {
         if idTextField.text?.isEmpty ?? true {
             return [idTextField]
@@ -18,14 +26,6 @@ class PasswordAutoFillSampleViewController: UIViewController {
             return [passwordTextField]
         } else {
             return [logInButton]
-        }
-    }
-
-    override func didUpdateFocus(in context: UIFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) {
-        // preferredFocusEnvironmentsだけを使った方法ではtvOS 12 beta 9ではうまくいかないため無理やり
-        let previously = context.previouslyFocusedView
-        if previously != idTextField && previously != passwordTextField && previously != logInButton {
-            setNeedsFocusUpdate()
         }
     }
 }

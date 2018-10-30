@@ -37,20 +37,21 @@ class FocusableCollectionViewSampleController: RawCollectionViewSampleController
 // MARK: - UICollectionViewDelegate
 
 extension FocusableCollectionViewSampleController: UICollectionViewDelegate {
-    func collectionView(_ collectionView: UICollectionView, didUpdateFocusIn context: UICollectionViewFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) {
-        if
-            let indexPath = context.previouslyFocusedIndexPath,
-            let previously = collectionView.cellForItem(at: indexPath)
-        {
+    func collectionView(_ collectionView: UICollectionView,
+                        didUpdateFocusIn context: UICollectionViewFocusUpdateContext,
+                        with coordinator: UIFocusAnimationCoordinator) {
+
+        if let indexPath = context.previouslyFocusedIndexPath,
+           let previously = collectionView.cellForItem(at: indexPath) {
+
             coordinator.addCoordinatedAnimations({
                 self.unfocus(previously)
             })
         }
 
-        if
-            let indexPath = context.nextFocusedIndexPath,
-            let next = collectionView.cellForItem(at: indexPath)
-        {
+        if let indexPath = context.nextFocusedIndexPath,
+           let next = collectionView.cellForItem(at: indexPath) {
+
             coordinator.addCoordinatedAnimations({
                 self.focus(next)
             })

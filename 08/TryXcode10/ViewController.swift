@@ -44,16 +44,15 @@ class ViewController: UIViewController {
 
     @IBAction func downloadImage(_ sender: UIBarButtonItem) {
         guard let url = URL(string: imageUrlString) else { return }
-
         // 非同期はOSSignpostIDを指定する
-        let signpostID = OSSignpostID(log: OSLog.downloadImage, object: imageView)
-        os_signpost(.begin, log: OSLog.downloadImage, name: "download", signpostID: signpostID, "download start")
+        let signpostID = OSSignpostID(log: downloadImageLog, object: imageView)
+        os_signpost(.begin, log: downloadImageLog, name: "download", signpostID: signpostID, "download start")
 
         fetchImage.download(url: url, completion: {[weak self] (image) in
             guard let strongSelf = self else { return }
             DispatchQueue.main.async {
                 strongSelf.imageView.image = image
-                os_signpost(.end, log: OSLog.downloadImage, name: "download", signpostID: signpostID, "download end image: %s", image.description)
+                os_signpost(.end, log: downloadImageLog, name: "download", signpostID: signpostID, "image: %s", image.description)
             }
         })
     }

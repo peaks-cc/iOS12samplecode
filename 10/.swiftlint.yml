@@ -6,6 +6,9 @@ cyclomatic_complexity:
   - 12
 identifier_name:
   excluded:
+    - x
+    - y
+    - i
     - id
     - vc
     - on

@@ -25,15 +25,15 @@ class ToggleConstraintsViewController: UIViewController {
 
     @IBAction func refresh(_ sender: UIBarButtonItem) {
         
-        let signpostID = OSSignpostID(log: OSLog.toggleConstraints)
+        let signpostID = OSSignpostID(log: toggleConstraintsLog)
         os_signpost(.begin,
-                    log: OSLog.toggleConstraints,
+                    log: toggleConstraintsLog,
                     name: "reload data",
                     signpostID: signpostID,
                     "%s", self.description)
         tableView.reloadData()
         os_signpost(.end,
-                    log: OSLog.toggleConstraints,
+                    log: toggleConstraintsLog,
                     name: "reload data",
                     signpostID: signpostID,
                     "%s", "end")
