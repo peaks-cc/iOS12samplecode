@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pF6-Rf-2Yy">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Onetime Code View Controller-->
+        <scene sceneID="bHF-13-HuA">
+            <objects>
+                <viewController id="pF6-Rf-2Yy" customClass="OnetimeCodeViewController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IWK-nA-QpK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="コードを入力" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbk-Wt-hpO" customClass="Label" customModule="DemoUI">
+                                <rect key="frame" x="90.5" y="52" width="194" height="38.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m7o-VK-f2y" customClass="Button" customModule="DemoUI">
+                                <rect key="frame" x="170" y="184.5" width="35" height="33"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <state key="normal" title="確認"/>
+                                <connections>
+                                    <action selector="confirm" destination="pF6-Rf-2Yy" eventType="touchUpInside" id="1Qk-pg-Mjc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qVM-3D-uSK" customClass="Button" customModule="DemoUI">
+                                <rect key="frame" x="0.0" y="20" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="1fh-k7-VFE"/>
+                                    <constraint firstAttribute="height" constant="44" id="SGd-nn-9CS"/>
+                                </constraints>
+                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="8" maxY="0.0"/>
+                                <state key="normal" image="chevron_left"/>
+                                <connections>
+                                    <action selector="back" destination="pF6-Rf-2Yy" eventType="touchUpInside" id="tGG-XZ-Pbw"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="123456" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MPD-Cs-HaD">
+                                <rect key="frame" x="79" y="122.5" width="216" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="one-time-code"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qVM-3D-uSK" firstAttribute="leading" secondItem="DNo-CX-3IY" secondAttribute="leading" id="2Oh-ba-vrM"/>
+                            <constraint firstItem="m7o-VK-f2y" firstAttribute="centerX" secondItem="DNo-CX-3IY" secondAttribute="centerX" id="9D8-Ba-AEp"/>
+                            <constraint firstItem="qVM-3D-uSK" firstAttribute="top" secondItem="DNo-CX-3IY" secondAttribute="top" id="G2t-25-Iky"/>
+                            <constraint firstItem="MPD-Cs-HaD" firstAttribute="top" secondItem="lbk-Wt-hpO" secondAttribute="bottom" constant="32" id="L9Q-cX-s71"/>
+                            <constraint firstItem="MPD-Cs-HaD" firstAttribute="leading" secondItem="IWK-nA-QpK" secondAttribute="leading" constant="79" id="Ver-pk-iUO"/>
+                            <constraint firstItem="lbk-Wt-hpO" firstAttribute="top" secondItem="DNo-CX-3IY" secondAttribute="top" constant="32" id="dHM-Iu-e0S"/>
+                            <constraint firstItem="m7o-VK-f2y" firstAttribute="top" secondItem="MPD-Cs-HaD" secondAttribute="bottom" constant="32" id="oMi-yQ-KeZ"/>
+                            <constraint firstAttribute="trailing" secondItem="MPD-Cs-HaD" secondAttribute="trailing" constant="80" id="pFI-kP-fYK"/>
+                            <constraint firstItem="lbk-Wt-hpO" firstAttribute="centerX" secondItem="DNo-CX-3IY" secondAttribute="centerX" id="ttL-ix-ewu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DNo-CX-3IY"/>
+                    </view>
+                    <connections>
+                        <outlet property="onetimeCodeTextField" destination="MPD-Cs-HaD" id="BPj-YC-Udj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9JP-rt-4qg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chevron_left" width="13" height="21"/>
+    </resources>
+</document>

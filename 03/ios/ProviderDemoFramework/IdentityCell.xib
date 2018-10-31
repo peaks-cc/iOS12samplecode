@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="LsL-d9-kpy" customClass="IdentityCell" customModule="ProviderDemoFramework" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LsL-d9-kpy" id="tV1-KI-43M">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qvd-MG-T11">
+                        <rect key="frame" x="15" y="4.5" width="345" height="35"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="yosuke.ishikawa@example.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ul-jc-oGD">
+                                <rect key="frame" x="0.0" y="0.0" width="345" height="20.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ios12demo.firebaseapp.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="As7-D0-A6o">
+                                <rect key="frame" x="0.0" y="20.5" width="345" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="As7-D0-A6o" secondAttribute="bottom" id="0yR-kk-y0l"/>
+                            <constraint firstAttribute="trailing" secondItem="2Ul-jc-oGD" secondAttribute="trailing" id="BU4-wk-iWu"/>
+                            <constraint firstAttribute="trailing" secondItem="As7-D0-A6o" secondAttribute="trailing" id="F7S-E0-ulv"/>
+                            <constraint firstItem="2Ul-jc-oGD" firstAttribute="leading" secondItem="qvd-MG-T11" secondAttribute="leading" id="KRa-up-YsC"/>
+                            <constraint firstItem="As7-D0-A6o" firstAttribute="leading" secondItem="qvd-MG-T11" secondAttribute="leading" id="TKv-4W-rQx"/>
+                            <constraint firstItem="2Ul-jc-oGD" firstAttribute="top" secondItem="qvd-MG-T11" secondAttribute="top" id="Urf-BV-QBl"/>
+                            <constraint firstItem="As7-D0-A6o" firstAttribute="top" secondItem="2Ul-jc-oGD" secondAttribute="bottom" id="kQd-Ui-oNt"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="qvd-MG-T11" firstAttribute="leading" secondItem="tV1-KI-43M" secondAttribute="leading" constant="15" id="LgK-aB-DX9"/>
+                    <constraint firstAttribute="trailing" secondItem="qvd-MG-T11" secondAttribute="trailing" constant="15" id="fjE-xf-rvX"/>
+                    <constraint firstItem="qvd-MG-T11" firstAttribute="centerY" secondItem="tV1-KI-43M" secondAttribute="centerY" id="nvF-wc-WUO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="serviceIdentifierLabel" destination="As7-D0-A6o" id="Hsy-Fn-Twl"/>
+                <outlet property="userLabel" destination="2Ul-jc-oGD" id="Lcp-oh-Xq6"/>
+            </connections>
+            <point key="canvasLocation" x="799" y="106"/>
+        </tableViewCell>
+    </objects>
+</document>
